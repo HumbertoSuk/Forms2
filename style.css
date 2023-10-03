@@ -1,0 +1,36 @@
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el título */
+h1 {
+    text-align: center;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para el mensaje de error */
+#mensajeError {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para el botón de enviar */
+.btn-primary {
+    width: 100%;
+}
