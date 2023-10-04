@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const formulario = document.getElementById("formulario");
+    const mensajeError = document.getElementById("mensajeError");
 
     formulario.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -73,9 +74,14 @@ document.addEventListener("DOMContentLoaded", function() {
             mostrarError("fechaNacimiento", ""); // Limpiar el campo
         }
 
-
+        // Verificar si hay errores
+        const errores = document.querySelectorAll(".error-border");
+        if (errores.length === 0) {
             // Si no hay errores, puedes enviar el formulario o realizar otras acciones aquí
             mensaje.textContent = "Formulario enviado con éxito.";
-
+        } else {
+            // Si hay errores, mostrar un mensaje de error general
+            mensaje.textContent = "Por favor, corrige los errores antes de enviar el formulario.";
+        }
     });
 });
