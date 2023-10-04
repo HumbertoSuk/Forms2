@@ -41,6 +41,19 @@ color: #ff0000;
 
 }
 
+/* Clase para establecer el borde en rojo */
+.error-border {
+    border-color: red !important; /* !important se utiliza para asegurarse de que esta regla se aplique incluso si hay otras reglas de estilo */
+}
+
+
+/* Estilo para el mensaje */
+#mensaje {
+    font-weight: bold;
+    text-align: center;
+    color: #631052;
+    
+    }
 /* Estilo para el botón de enviar */
 .btn-primary {
 width: 100%;
