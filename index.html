@@ -16,34 +16,41 @@
             <div class="mb-3">
                 <label for="id">ID (5 dígitos exactos)</label>
                 <input type="text" class="form-control" id="id" name="id">
+                <span class="error" id="errorId"></span> <!-- Nuevo elemento para mostrar el error -->
             </div>
             <div class="mb-3">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
+                <span class="error" id="errorNombre"></span>
             </div>
             <div class="mb-3">
                 <label for="apellidos">Apellidos</label>
                 <input type="text" class="form-control" id="apellidos" name="apellidos">
+                <span class="error" id="errorApellidos"></span>
             </div>
             <div class="mb-3">
                 <label for="telefono">Teléfono (###)###-####</label>
                 <input type="text" class="form-control" id="telefono" name="telefono">
+                <span class="error" id="errorTelefono"></span>
             </div>
             <div class="mb-3">
                 <label for="correo">Correo Electrónico</label>
                 <input type="email" class="form-control" id="correo" name="correo">
+                <span class="error" id="errorCorreo"></span>
             </div>
             <div class="mb-3">
                 <label for="edad">Edad (Número positivo)</label>
                 <input type="text" class="form-control" id="edad" name="edad">
+                <span class="error" id="errorEdad"></span>
             </div>
             <div class="mb-3">
                 <label for="fechaNacimiento">Fecha de Nacimiento (AAAA-MM-DD)</label>
                 <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                <span class="error" id="errorFechaNacimiento"></span>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-        <div id="mensajeError" class="text-danger mt-3"></div>
+        <div id="mensaje" class="text-danger mt-3"></div>
     </div>
 
     <!-- Agregar Bootstrap JS y tu archivo de JavaScript personalizado -->
